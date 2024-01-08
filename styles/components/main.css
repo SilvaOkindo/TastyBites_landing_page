@@ -1,4 +1,135 @@
 main {
     height: 100vh;
-    background-color: red;
+    padding: 1rem 2rem;
 }
+
+
+.main__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    background-color: rgb(231, 227, 227);
+    padding: 0.6rem;
+    border-radius: 0.4rem;
+    flex-grow: .7;
+    gap: 1rem;
+}
+
+
+.search span {
+    display: flex;
+    font-size: 1.5rem;
+    color: orangered;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;   
+    gap: 4rem;
+}
+
+
+.profile-name {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    background-color: rgb(245, 245, 245);
+    padding: 0.1rem .5rem;
+    border-radius: 60px;
+}
+
+.profile_pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.profile-name p {
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+
+.notification {
+    background-color: rgb(247, 247, 247);
+    padding: .8rem 1rem;
+    border-radius: 50%;
+    display: flex;
+    font-size: 1.4rem;
+    position: relative;
+}
+
+.notification::before {
+    content: '';
+    height: 8px;
+    width: 8px;
+    background-color: orangered;
+    position: absolute;
+    top: 15px;
+    right: 16px;
+    border-radius: 50%;
+
+}
+
+
+.location {
+    display: flex;
+    gap: .5rem;
+}
+
+.location .fi {
+    color: orangered;
+}
+
+
+
+/* 2xl
+@media ( max-width: 1536px) {
+ 
+}
+
+
+/* xl */
+@media ( max-width: 1280px) {
+    main {
+        background-color: red;
+    }
+}
+
+
+
+/* lg*/
+@media ( max-width: 1024px) {
+   
+}
+
+/* md */
+/* @media ( max-width: 768px) {
+  
+} */
+
+
+
+/* sm */
+/* @media ( max-width: 640px) {
+      
+} */
+
+
+/* xs */
+/* @media ( max-width: 475px) {
+   
+} */ 
